@@ -37,7 +37,7 @@ class Product extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
-    public function category()
+    public function categories()
     {
         return $this->belongsTo(ProductCategory::class, 'category_id');
     }
